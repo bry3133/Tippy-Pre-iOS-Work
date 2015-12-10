@@ -5,7 +5,7 @@ Tippy is a tip calculator application for iOS.
 
 Submitted by: Bryan Rivera
 
-Time spent: 5 hours spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
@@ -23,12 +23,13 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
+- [x] Adding custom backgroud and text color to make the app more interactive.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/pnQLJ0q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/cAToysa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -36,9 +37,12 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 One of my first challenges was the erors that I got when I follow the instructions on the video tutorial. The Xcode became more modernize so I had to learn to adjust to the new syntax of different words. 
+
 Another thing was putting the Settings bar button on the top of the screen. On the website when they showed us how to add the button, it forgot to talk about how to add the navigation screen before we do that. So when I tried to add the button, it didn’t appear on the top of the screen and did not connect wit the next screen. It was stressful but then I went online and looked up how to add buttons to the navigation bar and it helped a lot. 
+
 Also, it was difficult trying to show the default percentage on the main screen after it was being chosen. I didn’t know what variable to connect and what code to write within both view controllers. However, I then did more research on my own about Swift and starting learn how to write more code for the apps. It will a lot of digging but it was worth it!
-This being my first ever app that I have written was a rough start but I am proud of my work and hope to improve the app and the IUs.
+
+I tried to add a custom tip percentange slider that would allow me to change the values to other numbers. However, I did not know how to sync the slider and the pre made percentanges. I tried to look it up online but I coudl not find enough information. If selected for CodePath, I would want to learn have to do this and other UI animations. This is the first ever app I have written and I would like for you guys to consider the amount of knowledge I am eager to learn in this class. I would ove to gain more skills in the app development.
 
 
 ## License
