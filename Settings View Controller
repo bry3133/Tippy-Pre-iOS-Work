@@ -1,0 +1,81 @@
+//
+//  ViewController.swift
+//  tips
+//
+//  Created by Bryan Rivera on 12/3/15.
+//  Copyright © 2015 Bryan Rivera. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var billField: UITextField!
+    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        tipLabel.text = "$0.00"
+        totalLabel.text = "0.00"
+
+    }
+
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set the tip from defaults
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var tipOpt = defaults.integerForKey("defaultTipOption")
+        
+        if tipOpt == NSNotFound {
+            tipOpt = 1 // let's set it to the middle by default
+        }
+        
+        tipControl.selectedSegmentIndex = tipOpt
+        
+        // Set the bill from last session, if it was entered less than 5m ago
+        let lastEnteredDate = defaults.objectForKey("recentEnteredDate") as! NSDate?
+        
+        if lastEnteredDate !== nil && lastEnteredDate?.timeIntervalSinceNow > -60 * 5 {
+            billField.text = defaults.stringForKey("recentEnteredAmount")
+        }
+        
+        onEditingChange(self)
+    }
+
+    @IBAction func onEditingChange(sender: AnyObject) {
+        var tipPercentages = [0.18, 0.2, 0.22]
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        
+        let billAmount = NSString(string: billField.text!).doubleValue
+        
+        let tip = billAmount * tipPercentage
+        let total = billAmount + tip
+        
+        tipLabel.text = "$\(tip)"
+        totalLabel.text = "$\(total)"
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
+        
+        // Save the last entered amount
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(billField.text, forKey: "recentEnteredAmount")
+        defaults.setObject(NSDate(), forKey: "recentEnteredDate")
+    }
+
+    @IBAction func onTap(sender: AnyObject) {
+       view.endEditing(true)
+    }
+}
+
