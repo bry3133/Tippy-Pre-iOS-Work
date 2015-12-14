@@ -42,7 +42,7 @@ Another thing was putting the Settings bar button on the top of the screen. On t
 
 Also, it was difficult trying to show the default percentage on the main screen after it was being chosen. I didn’t know what variable to connect and what code to write within both view controllers. However, I then did more research on my own about Swift and starting learn how to write more code for the apps. It will a lot of digging but it was worth it!
 
-I tried to add a custom tip percentange slider that would allow me to change the values to other numbers. However, I did not know how to sync the slider and the pre made percentanges. I tried to look it up online but I coudl not find enough information. If selected for CodePath, I would want to learn have to do this and other UI animations. This is the first ever app I have written and I would like for you guys to consider the amount of knowledge I am eager to learn in this class. I would ove to gain more skills in the app development.
+I tried to add a custom tip percentange slider that would allow me to change the values to other numbers. However, I did not know how to sync the slider and the pre made percentanges. I tried to look it up online but I coudld not find enough information. If selected for CodePath, I would want to learn have to do this and other UI animations. This is the first ever app I have written and I would like for you guys to consider the amount of knowledge I am eager to learn in this class. I would love to gain more skills in the app development.
 
 
 ## License
