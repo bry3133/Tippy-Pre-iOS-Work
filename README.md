@@ -5,16 +5,16 @@ Tippy is a tip calculator application for iOS.
 
 Submitted by: Bryan Rivera
 
-Time spent: 8 hours spent in total
+Time spent: 8.5 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
+* [x] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [x] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -42,7 +42,7 @@ Another thing was putting the Settings bar button on the top of the screen. On t
 
 Also, it was difficult trying to show the default percentage on the main screen after it was being chosen. I didn’t know what variable to connect and what code to write within both view controllers. However, I then did more research on my own about Swift and starting learn how to write more code for the apps. It will a lot of digging but it was worth it!
 
-I tried to add a custom tip percentange slider that would allow me to change the values to other numbers. However, I did not know how to sync the slider and the pre made percentanges. I tried to look it up online but I coudld not find enough information. If selected for CodePath, I would want to learn have to do this and other UI animations. This is the first ever app I have written and I would like for you guys to consider the amount of knowledge I am eager to learn in this class. I would love to gain more skills in the app development.
+I attempted to add a custom tip percentange slider that would allow me to change the values to other numbers. However, I did not know how to sync the slider and the pre made percentanges. I tried to look it up online but I coudld not find enough information. If selected for CodePath, I would want to learn have to do this and UI animations. This is the first ever app I have written so I would like for you guys to consider the amount of knowledge I am eager and willing to learn in this class. I would love to gain more skills in the app development and technology so being in this class would be a really great oppotunity.
 
 
 ## License
